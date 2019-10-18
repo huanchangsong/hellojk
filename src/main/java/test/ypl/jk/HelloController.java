@@ -16,6 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping("/")
     public String sayHello() {
-        return "huancs,测试:hello,jenkins;20191018";
+        return "huancs,测试:hello,jenkins;20191018xx";
     }
 }

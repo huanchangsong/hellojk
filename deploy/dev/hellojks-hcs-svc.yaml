@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: jks-hcs
+    component: hellojks-hcs-dev
+  name: hellojks-hcs-dev
+  namespace: huancs-test
+spec:
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+      nodePort: 30861
+  selector:
+    app: jks-hcs
+    component: hellojks-hcs-dev
+    tier: backend
+  sessionAffinity: None
+  type: NodePort
