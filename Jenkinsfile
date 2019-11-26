@@ -12,7 +12,7 @@ pipeline {
             }
         }
 
-        stage('Deliver') {
+        stage('Deploy') {
             steps {
                 //sh 'chmod 754 ./scripts/deliver.sh'                
                 //sh './scripts/deliver.sh'
