@@ -16,7 +16,7 @@ pipeline {
             steps {
                 //sh 'chmod 754 ./scripts/deliver.sh'                
                 //sh './scripts/deliver.sh'
-                sh 'java -jar target/hellojk-0.0.1-SNAPSHOT.jar'
+                sh 'java -jar target/hellojk-0.0.1-SNAPSHOT.jar &'
             }
         }
     }
