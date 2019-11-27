@@ -14,11 +14,12 @@ pipeline {
 
         stage('Deliver') {
             steps {
-             sh '''
-                 chmod 754 ./scripts/deliver.sh              
+            
+               //  chmod 754 ./scripts/deliver.sh              
                 
-                 ./scripts/deliver.sh
-              ''' 
+               //  ./scripts/deliver.sh
+              sh 'BUILD_ID=dontKillMe nohup java -jar target/hellojk-0.0.1-SNAPSHOT.jar &'
+             
             }
         }
     }
