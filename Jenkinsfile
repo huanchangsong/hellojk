@@ -16,7 +16,7 @@ pipeline {
             steps {
              sh '''
                  chmod 754 ./scripts/deliver.sh              
-                 BUILD_ID=dontKillMe 
+                
                  ./scripts/deliver.sh
               ''' 
             }
