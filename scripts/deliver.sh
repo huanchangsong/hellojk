@@ -27,4 +27,4 @@ set -x
 
 chmod 777 target/${NAME}-${VERSION}.jar
 BUILD_ID=dontKillMe
-nohup java -jar target/${NAME}-${VERSION}.jar &
+setsid java -jar target/${NAME}-${VERSION}.jar &
