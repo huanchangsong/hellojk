@@ -26,4 +26,4 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 
 chmod 777 target/${NAME}-${VERSION}.jar
-nohup  java -jar target/${NAME}-${VERSION}.jar  > /dev/null &
+nohup  java -jar target/${NAME}-${VERSION}.jar &
